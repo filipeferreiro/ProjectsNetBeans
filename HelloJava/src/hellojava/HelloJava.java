@@ -15,6 +15,7 @@ public class HelloJava {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        /* primeiro programa em Java */
         System.out.println("Hello Java!!");
     }
     

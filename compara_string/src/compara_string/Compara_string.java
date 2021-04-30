@@ -12,6 +12,7 @@ import java.util.Scanner;
 public class Compara_string {
 
     public static void main(String[] args) {
+        /* declaração das variaveis */
         Scanner entrada;
         entrada = new Scanner(System.in);
         String nome1, nome2, nome3, nome4;
@@ -21,9 +22,9 @@ public class Compara_string {
         nome2 = entrada.next();
         nome3 = entrada.next();
         nome4 = entrada.next();
-            
+        /* entrada do meu nome e turma */    
         System.out.println("Filipe Ferreiro Pereira - 2ºDesenvolvimento de Sistemas");
-        
+        /* estrutura para a operação e saidas */
            if(nome1.equals(nome2)) resultado++;
            if(nome1.equals(nome3)) resultado++;
            if(nome1.equals(nome4)) resultado++;

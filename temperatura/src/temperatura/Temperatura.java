@@ -12,19 +12,20 @@ import java.util.Scanner;
 public class Temperatura {
 
     public static void main(String[] args) {
+        /* declaração de variáveis */
         Scanner entrada;
         entrada = new Scanner(System.in);
         float temperatura, converte=0;
         int tipo, kont=1;
-        
+        /* entrada do meu nome e turma */
         System.out.println("Filipe Ferreiro Pereira - 2ºDesenvolvimento de Sistemas");
-            
+        /*estrutura para a entrada das variáveis para a operação */    
         while(kont==1){
             
             System.out.println("Insira o tipo de medida de temperatura (1 para Celsius e 2 para Fahrenheit): ");
             tipo = entrada.nextInt();  
             
-
+            /* operação e saida */
             switch(tipo){
                 case 1:
                 {
@@ -49,7 +50,7 @@ public class Temperatura {
                 default: System.out.println("Opção inválida!");
                 break;
             }
-            
+            /* reinicio opcional do loop */
             System.out.println("Deseja continuar? (1 para sim e 2 para não)");
             kont = entrada.nextInt();
         }

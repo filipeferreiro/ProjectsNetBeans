@@ -12,13 +12,13 @@ import java.util.Scanner;
 public class Placa_carro {
 
     public static void main(String[] args) {
+        /* declaração de variáveis */
         Scanner entrada;
         entrada = new Scanner(System.in);
         String placa;
-        
-        
+        /* entrada do meu nome e turma */  
         System.out.println("Filipe Ferreiro Pereira - 2ºDesenvolvimento de Sistemas");
-        
+        /* entrada da variavel */
         System.out.println("Insira a placa do seu carro: ");
         placa = entrada.nextLine();
         
@@ -27,7 +27,7 @@ public class Placa_carro {
         String num = caracteres[1];
         String numfin = num.substring(num.length()-1);
         int numero = Integer.parseInt(numfin);
-        
+        /* case para os numeros da placa e saida */
         switch(numero){
             case 0:
                  System.out.println("\nO seu rodizio é na sexta-feira!");

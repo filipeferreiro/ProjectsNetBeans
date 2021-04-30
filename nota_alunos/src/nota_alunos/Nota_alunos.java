@@ -13,13 +13,14 @@ import java.util.Scanner;
 public class Nota_alunos {
 
     public static void main(String[] args) {
+        /* declaração de variáveis */
         Scanner entrada;
         entrada = new Scanner(System.in);
         float nota1, nota2, nota3, nota_fin;
         int num_alu, kont = 0, kont_alu=1;
-        
+        /* entrada do meu nome e turma */  
         System.out.println("Filipe Ferreiro Pereira - 2ºDesenvolvimento de Sistemas");
-        
+         /*entrada das variáveis para a operação */
         System.out.println("Insira a quantidade de alunos: ");
             num_alu = entrada.nextInt();
             
@@ -30,12 +31,12 @@ public class Nota_alunos {
             nota2 = entrada.nextFloat();
         System.out.println("Insira a terceira nota: ");
             nota3 = entrada.nextFloat();
-        
+        /* operação para nota */
         nota_fin = (nota1 + nota2 + nota3)/3;
         
         DecimalFormat df = new DecimalFormat("#.##");
         String formated = df.format(nota_fin);
-        
+        /* loop para quantidade de alunos e saida */
         if(nota_fin < 6){
         System.out.println("A média do aluno " + kont_alu + " é: " + formated + " REPROVADO" + "\n");
         }
