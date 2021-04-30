@@ -12,18 +12,19 @@ import java.util.Scanner;
 public class Area_perim {
 
     public static void main(String[] args) {
+        /* declaração de variáveis */
         Scanner entrada;
         entrada = new Scanner(System.in);
         float lado1,lado2,area,perimetro;
-        
+        /* entrada do meu nome e turma */
         System.out.println("Filipe Ferreiro Pereira - 2ºDesenvolvimento de Sistemas");
-        
+        /*entrada das variáveis para a operação */
         System.out.println("Insira a medida do primeiro lado: ");
         lado1 = entrada.nextFloat();
         
         System.out.println("Insira a medida do segundo lado: ");
         lado2 = entrada.nextFloat();
-        
+        /* estrutura para a operação e saidas */
         if(lado1 == lado2){
         area = lado1 * lado2;
         perimetro = 2*(lado1 + lado2);
